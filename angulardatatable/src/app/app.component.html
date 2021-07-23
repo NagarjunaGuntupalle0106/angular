@@ -1,0 +1,22 @@
+<div class="container p-5">
+  <h1 class="text-center mt-5 mb-5">Jassa therichpost.com</h1>
+  <button class="btn btn-primary mb-4" (click)="addrow()">Add New Row</button>
+  <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+      <thead>
+        <tr>
+        
+          <th>Name</th>
+          <th>Email</th>
+          <th>Blog</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr *ngFor="let group of datas">
+            
+             <td>{{group.name}}</td>
+             <td>{{group.email}}</td>
+             <td>{{group.website}}</td>
+         </tr>
+      </tbody>
+    </table>
+</div>
